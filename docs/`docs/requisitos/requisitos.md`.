@@ -1,29 +1,21 @@
-```
 # Especidicação de Requisitos - Sistema de Gestão de Torneios
-
-## 1. Atores do Sistema
-* **Organizador (Administrador):** Usuário autenticado responsável pelo gerenciamento de dados e placares.
-* **Torcedor / Participante (Público):** Usuário não autenticado que apenas consulta tabelas e horários.
-
-## 2. Requisitos Funcionais (RF)
-* **RF-01:** O sistema deve permitir que o organizador cadastre as equipes participantes do torneio.
-* **RF-02:** O sistema deve permitir o agendamento de partidas com data, horário e equipes envolvidas.
-* **RF-03:** O sistema deve permitir que o organizador insira e atualize os placares das partidas finalizadas.
-* **RF-04:** O sistema deve calcular automaticamente a pontuação, número de vitórias, empates, derrotas e saldo de gols de cada equipe a cada placar inserido.
-* **RF-05:** O sistema deve exibir publicamente a tabela de classificação atualizada e o cronograma de jogos.
-
-## 3. Requisitos Não-Funcionais (RNF)
-* **RNF-01 (Desempenho):** A tabela de classificação deve ser recalculada e exibida na tela em menos de 2 segundos após a submissão de um novo placar.
-* **RNF-02 (Usabilidade):** A interface de consulta pública deve ser responsiva e adaptada para navegação em dispositivos móveis.
-* **RNF-03 (Segurança):** Apenas usuários autenticados com o perfil "Organizador" têm permissão para cadastrar dados e alterar placares.
-
-## 4. História de Usuário (User Story) e Critérios de Aceitação
-* **US-01:** *Como organizador, quero lançar o placar de uma partida finalizada para que a tabela de classificação seja atualizada automaticamente.*
-  * **Critério de Aceitação 1:** Ao salvar o placar (ex: Time A 2 x 1 Time B), o Time A deve somar 3 pontos e o Time B 0 pontos.
-  * **Critério de Aceitação 2:** O saldo de gols e gols pró/contra de ambos os times devem ser atualizados instantaneamente na tabela pública.
-
-## 5. Escopo Negativo
-* O sistema **NÃO** realizará gestão de cartões ou artilharia por jogador nesta versão.
-* O sistema **NÃO** suportará formatos de chaveamento mata-mata (apenas pontos corridos).
-
-```
+# 1. Atores do Sistema
+Organizador (Administrador): Usuário autenticado responsável pelo gerenciamento de dados e placares.
+Torcedor / Participante (Público): Usuário não autenticado que apenas consulta tabelas e horários.
+# 2. Requisitos Funcionais (RF)
+RF-01: O sistema deve permitir que o organizador cadastre as equipes participantes do torneio.
+RF-02: O sistema deve permitir o agendamento de partidas com data, horário e equipes envolvidas.
+RF-03: O sistema deve permitir que o organizador insira e atualize os placares das partidas finalizadas.
+RF-04: O sistema deve calcular automaticamente a pontuação, número de vitórias, empates, derrotas e saldo de gols de cada equipe a cada placar inserido.
+RF-05: O sistema deve exibir publicamente a tabela de classificação atualizada e o cronograma de jogos.
+# 3. Requisitos Não-Funcionais (RNF)
+RNF-01 (Desempenho): A tabela de classificação deve ser recalculada e exibida na tela em menos de 2 segundos após a submissão de um novo placar.
+RNF-02 (Usabilidade): A interface de consulta pública deve ser responsiva e adaptada para navegação em dispositivos móveis.
+RNF-03 (Segurança): Apenas usuários autenticados com o perfil "Organizador" têm permissão para cadastrar dados e alterar placares.
+# 4. História de Usuário (User Story) e Critérios de Aceitação
+US-01: Como organizador, quero lançar o placar de uma partida finalizada para que a tabela de classificação seja atualizada automaticamente.
+  Critério de Aceitação 1: Ao salvar o placar (ex: Time A 2 x 1 Time B), o Time A deve somar 3 pontos e o Time B 0 pontos.
+  Critério de Aceitação 2: O saldo de gols e gols pró/contra de ambos os times devem ser atualizados instantaneamente na tabela pública.
+# 5. Escopo Negativo
+ O sistema NÃO realizará gestão de cartões ou artilharia por jogador nesta versão.
+ O sistema NÃO suportará formatos de chaveamento mata-mata (apenas pontos corridos).
