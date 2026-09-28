@@ -1,0 +1,11 @@
+{
+  "name": "sistema-gestao-torneios",
+  "version": "0.3.0",
+  "description": "Sprint 3 - Modelagem e rastreabilidade dos requisitos - Sistema de Gestao de Torneios",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node test/tournamentService.test.js"
+  },
+  "license": "MIT"
+}

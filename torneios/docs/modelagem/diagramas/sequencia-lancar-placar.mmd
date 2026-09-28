@@ -1,0 +1,21 @@
+sequenceDiagram
+    actor Org as Organizador
+    participant UI as Interface
+    participant TS as TournamentService
+    participant M as Match
+    participant TA as Team (Time A)
+    participant TB as Team (Time B)
+    actor Torc as Torcedor
+
+    Org->>UI: Informa placar (Time A 2 x 1 Time B)
+    UI->>TS: submitScore(matchId, 2, 1)
+    TS->>TS: verifica papel do usuário (RNF-03)
+    TS->>M: finish(2, 1)
+    M-->>TS: status = "finished"
+    TS->>TA: registerResult({golsPro:2, golsContra:1})
+    TA-->>TS: pontos +3, saldo +1
+    TS->>TB: registerResult({golsPro:1, golsContra:2})
+    TB-->>TS: pontos +0, saldo -1
+    TS->>TS: getStandings() (RF-04 -> RF-05)
+    TS-->>UI: tabela de classificação atualizada
+    UI-->>Torc: exibe tabela pública (< 2s, RNF-01)

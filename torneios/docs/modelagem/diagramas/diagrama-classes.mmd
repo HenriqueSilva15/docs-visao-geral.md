@@ -1,0 +1,38 @@
+classDiagram
+    class Team {
+        +String id
+        +String name
+        +int played
+        +int wins
+        +int draws
+        +int losses
+        +int goalsFor
+        +int goalsAgainst
+        +int points
+        +goalDifference() int
+        +registerResult(resultado)
+    }
+
+    class Match {
+        +String id
+        +String date
+        +String time
+        +int homeScore
+        +int awayScore
+        +String status
+        +finish(homeScore, awayScore)
+    }
+
+    class TournamentService {
+        -Map~String,Team~ teams
+        -Map~String,Match~ matches
+        +registerTeam(name, usuario) Team
+        +scheduleMatch(homeId, awayId, date, time, usuario) Match
+        +submitScore(matchId, homeScore, awayScore, usuario) Standings
+        +getStandings() Standings
+        +getSchedule() Schedule
+    }
+
+    TournamentService "1" --> "*" Team : gerencia
+    TournamentService "1" --> "*" Match : gerencia
+    Match "1" --> "2" Team : homeTeam / awayTeam

@@ -1,0 +1,21 @@
+flowchart LR
+    Organizador(["👤 Organizador"])
+    Torcedor(["👤 Torcedor / Participante"])
+
+    UC1(("Cadastrar Equipes<br/>RF-01"))
+    UC2(("Agendar Partidas<br/>RF-02"))
+    UC3(("Lançar / Atualizar Placar<br/>RF-03"))
+    UC4(("Calcular Classificação<br/>RF-04"))
+    UC5(("Consultar Classificação<br/>RF-05"))
+    UC6(("Consultar Cronograma<br/>RF-05"))
+
+    Organizador --> UC1
+    Organizador --> UC2
+    Organizador --> UC3
+    Organizador --> UC5
+    Organizador --> UC6
+
+    Torcedor --> UC5
+    Torcedor --> UC6
+
+    UC3 -. "«include»" .-> UC4
