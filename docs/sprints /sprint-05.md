@@ -5,19 +5,19 @@ Número: 05
 *Data limite: 26/10/2026 
 Tag da entrega: sprint-05.
 
- \## 2\. Objetivo Específico da Sprint
+ ## 2 Objetivo Específico da Sprint
  Implementar e documentar a aplicação do Padrão de Projeto Strategy para o cálculo de pontuação e critérios de classificação no sistema de torneios.
 
- \## 3\. Sprint Backlog
+ ## 3 Sprint Backlog
  | Issue | Item | Responsável | Estado |
  |-------|------|-------------|--------|
  | #15 | Documentar e aplicar padrão Strategy | Henrique | Concluído |
 
-  4\. Artefato Central da Disciplina 
+  ## 4 Artefato Central da Disciplina 
  Arquivo:docs/padroes/padroes-de-projeto.md
  Conteúdo: Descrição do problema concreto, escolha do Padrão Strategy e estrutura de participantes.
 
- \## 5\. Rastreabilidade 
+ ## 5 Rastreabilidade 
  | Item | Issue/Requisito | Artefato ou Código | 
  |------|------------------|--------------------| 
  | RF-04 | #15 | \`docs/padroes/padroes-de-projeto.md\` |
