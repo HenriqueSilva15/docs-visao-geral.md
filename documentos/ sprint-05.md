@@ -11,7 +11,7 @@ Tag da entrega: sprint-05.
  \## 3\. Sprint Backlog
  | Issue | Item | Responsável | Estado |
  |-------|------|-------------|--------|
- | #15 | Documentar e aplicar padrão Strategy | Seu Nome | Concluído |
+ | #15 | Documentar e aplicar padrão Strategy | Henrique | Concluído |
 
   4\. Artefato Central da Disciplina 
  Arquivo:docs/padroes/padroes-de-projeto.md
